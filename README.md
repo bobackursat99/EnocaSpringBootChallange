@@ -1,73 +1,41 @@
-# EnocaSpringBootChallange
 
-# Project Name: Enoca Spring Boot Challange
+# Enoca SpringBoot Challange
 
-# Introduction:
 This project is an E-commerce platform developed using Java Spring Boot framework. It includes entities for Product, Customer, Cart, and Order, with a Base Entity for inheritance. The project aims to demonstrate the management of products, customers, carts, and orders in an online shopping scenario, including the association between a customer, their cart, and multiple orders. Additionally, it incorporates features such as real-time calculation and updating of total prices in the cart, tracking historical prices of products, and managing product stock.
 
-# Entities:
 
-Base Entity:
-A base entity for common attributes like ID, creation timestamp, and modification timestamp.
 
-Product: 
-Represents a product with attributes such as name, description, price, and stock quantity.
 
-Customer: 
-Represents a customer with attributes like name, email, and address.
+## Technologies
 
-Cart: Represents a cart associated with a customer, containing a list of products and their quantities.
+**Programming Language:** Java 17
 
-Order: Represents an order placed by a customer, containing details such as order code, order date, and total price.
+**Database:** MySQL
 
-Relationships:
+**Dependencies:** Spring Web, Spring Data JPA, MySQL Driver, Spring Boot DevTools
 
-A Customer can have one Cart.
-A Customer can have multiple Orders.
-An Order can have multiple Products.
 
-# Services:
 
-# AddCustomer: 
-Service to add a new customer to the system.
+  
+## Installation
 
-# GetProduct:
-Service to retrieve details of a specific product by ID.
+Clone the repository:
 
-# CreateProduct:
-Service to add a new product to the system.
+```bash
+  git clone https://github.com/bobackursat99/EnocaSpringBootChallange/tree/main
+```
 
-# UpdateProduct:
-Service to update the details of an existing product.
+Create a MySQL database or connect to an existing MySQL server.
 
-# DeleteProduct:
-Service to delete a product from the system.
+Open the application.properties file and update the MySQL database configuration.
 
-# GetCart:
-Service to retrieve the current cart of a customer.
+Navigate to the project folder and run the following command to start the application:
 
-# UpdateCart:
-Service to update the contents of a customer's cart (e.g., add, remove, update product quantities).
+```bash
+  mvn spring-boot:run
 
-# EmptyCart:
-Service to clear all products from a customer's cart.
+```
 
-# PlaceOrder:
-Service to place an order for the products in the customer's cart.
 
-# GetOrderForCode:
-Service to retrieve details of a specific order by order code.
 
-# GetAllOrdersForCustomer:
-Service to retrieve all orders placed by a specific customer.
-
-# AddProductToCart:
-Service to add a product to the customer's cart.
-
-# RemoveProductFromCart:
-Service to remove a product from the customer's cart.
-
-# Additional Features:
-
-Real-time calculation of total prices in the cart.
-Stock management to prevent ordering products with insufficient stock.
+  
