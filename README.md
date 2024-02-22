@@ -7,17 +7,20 @@ This project is an E-commerce platform developed using Java Spring Boot framewor
 
 # Entities:
 
-# Base Entity: A base entity for common attributes like ID, creation timestamp, and modification timestamp.
+Base Entity:
+A base entity for common attributes like ID, creation timestamp, and modification timestamp.
 
-# Product: Represents a product with attributes such as name, description, price, and stock quantity.
+Product: 
+Represents a product with attributes such as name, description, price, and stock quantity.
 
-# Customer: Represents a customer with attributes like name, email, and address.
+Customer: 
+Represents a customer with attributes like name, email, and address.
 
-# Cart: Represents a cart associated with a customer, containing a list of products and their quantities.
+Cart: Represents a cart associated with a customer, containing a list of products and their quantities.
 
-# Order: Represents an order placed by a customer, containing details such as order code, order date, and total price.
+Order: Represents an order placed by a customer, containing details such as order code, order date, and total price.
 
-# Relationships:
+Relationships:
 
 A Customer can have one Cart.
 A Customer can have multiple Orders.
